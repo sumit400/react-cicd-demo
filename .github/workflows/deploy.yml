@@ -31,10 +31,10 @@ jobs:
 
       - name: Configure Git
         run: |
-          git config --global user.name "github-actions"
-          git config --global user.email "github-actions@github.com"
+          git config --global user.name "sumit400"
+          git config --global user.email "coolsumitsingh400@gmail.com"
 
       - name: Deploy app (CD)
         run: npm run deploy
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
