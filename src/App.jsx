@@ -38,7 +38,7 @@ function App() {
   return (
     <div style={{ textAlign: "center", marginTop: "40px" }}>
       <h1>Hello CI/CD 🚀</h1>
-      <p>This app is deployed using GitHub Actions</p>
+      <p>This app is deployed using Github</p>
     </div>
   );
 }
