@@ -47,53 +47,66 @@
 
 function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 px-6">
-      <div className="max-w-4xl w-full text-center text-white">
-        {/* Hero Heading */}
-        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
-          🛒 Smart E-Commerce Platform
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-slate-950 via-indigo-950 to-fuchsia-950 px-6">
+      <div className="max-w-5xl w-full text-center">
+        {/* Badge */}
+        <div className="inline-block mb-6 px-5 py-2 rounded-full bg-white/10 backdrop-blur-md text-sm font-semibold text-indigo-300">
+          Next-Gen Online Shopping Experience
+        </div>
+
+        {/* Gradient Heading */}
+        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6 bg-gradient-to-r from-indigo-400 via-pink-400 to-fuchsia-400 bg-clip-text text-transparent">
+          Smart E-Commerce Platform
         </h1>
 
         {/* Subtitle */}
-        <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
-          A modern, scalable e-commerce platform designed to deliver seamless
-          shopping experiences. Discover products, manage orders, and enjoy
-          fast, secure checkout — all in one place.
+        <p className="max-w-3xl mx-auto text-lg md:text-xl text-slate-300 mb-12 leading-relaxed">
+          Discover a beautifully crafted e-commerce platform built for speed,
+          security, and scalability. Shop smarter with seamless navigation,
+          secure payments, and lightning-fast performance.
         </p>
 
-        {/* Feature Card */}
-        <div className="bg-white/15 backdrop-blur-lg rounded-2xl p-6 mb-10 shadow-xl">
-          <p className="text-lg font-medium">
-            Built for modern businesses with:
-          </p>
+        {/* Features */}
+        <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-14">
+          <div className="rounded-2xl bg-white/10 backdrop-blur-lg p-6 text-slate-200 shadow-xl">
+            <p className="text-3xl mb-2">⚡</p>
+            <h3 className="font-semibold text-lg mb-1">Fast Performance</h3>
+            <p className="text-sm text-slate-400">
+              Optimized for speed and smooth browsing.
+            </p>
+          </div>
 
-          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm font-semibold">
-            <div className="bg-white/10 rounded-xl py-3">
-              ⚡ Fast Performance
-            </div>
-            <div className="bg-white/10 rounded-xl py-3">
-              🔐 Secure Payments
-            </div>
-            <div className="bg-white/10 rounded-xl py-3">
-              📦 Smart Order Management
-            </div>
+          <div className="rounded-2xl bg-white/10 backdrop-blur-lg p-6 text-slate-200 shadow-xl">
+            <p className="text-3xl mb-2">🔐</p>
+            <h3 className="font-semibold text-lg mb-1">Secure Payments</h3>
+            <p className="text-sm text-slate-400">
+              Safe, encrypted, and reliable checkout.
+            </p>
+          </div>
+
+          <div className="rounded-2xl bg-white/10 backdrop-blur-lg p-6 text-slate-200 shadow-xl">
+            <p className="text-3xl mb-2">📦</p>
+            <h3 className="font-semibold text-lg mb-1">Smart Orders</h3>
+            <p className="text-sm text-slate-400">
+              Track and manage orders effortlessly.
+            </p>
           </div>
         </div>
 
         {/* CTA Buttons */}
         <div className="flex flex-col sm:flex-row gap-4 justify-center">
-          <button className="px-8 py-3 rounded-xl bg-white text-indigo-700 font-semibold shadow-lg hover:scale-105 hover:bg-gray-100 transition">
+          <button className="px-10 py-4 rounded-xl font-semibold text-white bg-gradient-to-r from-indigo-500 to-fuchsia-500 shadow-lg hover:scale-105 transition">
             Explore Products
           </button>
 
-          <button className="px-8 py-3 rounded-xl border border-white/70 font-semibold hover:bg-white/10 transition">
+          <button className="px-10 py-4 rounded-xl font-semibold text-indigo-300 border border-indigo-400/40 hover:bg-white/5 transition">
             Start Shopping
           </button>
         </div>
 
         {/* Footer */}
-        <p className="mt-12 text-sm text-white/80">
-          Powering next-generation online stores 🚀
+        <p className="mt-14 text-sm text-slate-400">
+          Powering modern online stores with style & performance 🚀
         </p>
       </div>
     </div>
