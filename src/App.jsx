@@ -47,38 +47,53 @@
 
 function App() {
   return (
-    <div
-      style={{
-        minHeight: "100vh",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        background: "linear-gradient(135deg, #667eea, #764ba2)",
-        color: "#fff",
-        fontFamily: "Arial, sans-serif",
-        textAlign: "center",
-        padding: "20px",
-      }}
-    >
-      <div>
-        <h1 style={{ fontSize: "3rem", marginBottom: "10px" }}>
-          🚀 CI/CD Deployment Successful
+    <div className="min-h-screen flex items-center justify-center bg-gradient-to-br from-indigo-600 via-purple-600 to-pink-600 px-6">
+      <div className="max-w-4xl w-full text-center text-white">
+        {/* Hero Heading */}
+        <h1 className="text-5xl md:text-6xl font-extrabold tracking-tight mb-6">
+          🛒 Smart E-Commerce Platform
         </h1>
 
-        <p style={{ fontSize: "1.2rem", marginBottom: "20px" }}>
-          This React + Vite application is automatically built and deployed
-          using <strong>GitHub Actions</strong> and{" "}
-          <strong>GitHub Pages</strong>.
+        {/* Subtitle */}
+        <p className="text-lg md:text-xl text-white/90 mb-10 leading-relaxed">
+          A modern, scalable e-commerce platform designed to deliver seamless
+          shopping experiences. Discover products, manage orders, and enjoy
+          fast, secure checkout — all in one place.
         </p>
 
-        <p style={{ opacity: 0.9 }}>
-          Every push to the <strong>main</strong> branch triggers a pipeline:
-          <br />
-          Build → Test → Deploy ✨
-        </p>
+        {/* Feature Card */}
+        <div className="bg-white/15 backdrop-blur-lg rounded-2xl p-6 mb-10 shadow-xl">
+          <p className="text-lg font-medium">
+            Built for modern businesses with:
+          </p>
 
-        <p style={{ marginTop: "30px", fontSize: "0.95rem", opacity: 0.8 }}>
-          Built with ❤️ for CI/CD learning & automation
+          <div className="mt-4 grid grid-cols-1 sm:grid-cols-3 gap-4 text-sm font-semibold">
+            <div className="bg-white/10 rounded-xl py-3">
+              ⚡ Fast Performance
+            </div>
+            <div className="bg-white/10 rounded-xl py-3">
+              🔐 Secure Payments
+            </div>
+            <div className="bg-white/10 rounded-xl py-3">
+              📦 Smart Order Management
+            </div>
+          </div>
+        </div>
+
+        {/* CTA Buttons */}
+        <div className="flex flex-col sm:flex-row gap-4 justify-center">
+          <button className="px-8 py-3 rounded-xl bg-white text-indigo-700 font-semibold shadow-lg hover:scale-105 hover:bg-gray-100 transition">
+            Explore Products
+          </button>
+
+          <button className="px-8 py-3 rounded-xl border border-white/70 font-semibold hover:bg-white/10 transition">
+            Start Shopping
+          </button>
+        </div>
+
+        {/* Footer */}
+        <p className="mt-12 text-sm text-white/80">
+          Powering next-generation online stores 🚀
         </p>
       </div>
     </div>
