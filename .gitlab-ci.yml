@@ -3,6 +3,11 @@ image: node:20
 stages:
   - install
   - build
+  - deploy
+
+cache:
+  paths:
+    - node_modules/
 
 install_dependencies:
   stage: install
@@ -13,3 +18,20 @@ build_app:
   stage: build
   script:
     - npm run build
+  artifacts:
+    paths:
+      - dist/ # Save the build folder for next stage
+    expire_in: 1 hour
+
+pages:
+  stage: deploy
+  dependencies:
+    - build_app
+  script:
+    - mkdir public
+    - cp -r dist/* public/ # GitLab Pages expects a folder named 'public'
+  artifacts:
+    paths:
+      - public
+  only:
+    - main # Deploy only from main branch
